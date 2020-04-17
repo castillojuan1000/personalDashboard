@@ -1,11 +1,48 @@
 import React from 'react';
-import './App.css';
-import TimerAndQuote from './components/TimerAndQuote'
+
+import TimerAndQuote from './components/Timer&Quote/TimerAndQuote'
+import ExpenseTracker from '../src/components/ExpenseTracker/ExpenseTracker'
+import { Todo } from './components/Todo/Todo'
+
+import { makeStyles } from '@material-ui/core/styles';
+import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(1),
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
+    height: '80vh',
+    overflow: 'auto'
+  },
+}));
 
 function App() {
+  const classes = useStyles();
   return (
     <>
       <TimerAndQuote />
+      <div className={classes.root} >
+        <Grid container spacing={3} >
+
+          <Grid item xs={12} sm={6} style={{ paddingRight: 0 }}>
+            <Paper className={classes.paper} style={{ paddingRight: 0 }}>
+              <ExpenseTracker />
+            </Paper>
+          </Grid>
+
+          <Grid item xs={12} sm={6} style={{ paddingLeft: 0 }}>
+            <Paper className={classes.paper} style={{ paddingLeft: 0, }} >
+              <Todo />
+            </Paper>
+          </Grid>
+
+        </Grid>
+      </div>
     </>
   );
 }

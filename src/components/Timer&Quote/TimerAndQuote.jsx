@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from "react";
 import Quote from "./Quote";
 import axios from "axios";
 import Timer from "./Timer";
-import Quote1Image from '../img/quote1.jpg'
+import Quote1Image from '../../img/quote1.jpg'
 
 const backgroundImage = {
   backgroundImage: `url(${Quote1Image})`,
@@ -11,7 +11,8 @@ const backgroundImage = {
   width: "100%",
   backgroundPosition: 'center',
   backgroundSize: 'cover',
-  backgroundRepeat: 'no-repeat'
+  backgroundRepeat: 'no-repeat',
+  boxSizing: 'border-box'
 }
 
 export default function TimerAndQuote() {

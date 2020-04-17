@@ -16,7 +16,14 @@ const useStyles = makeStyles(theme => ({
     color: 'white'
 
   },
+  typography: {
 
+    fontSize: '1.5rem',
+
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '.9rem',
+    },
+  }
 
 }));
 
@@ -31,7 +38,7 @@ export default function Quote1({ quote, staticQuote }) {
         <Grid item xs={12}>
           <Paper className={classes.paper}>
 
-            <Typography variant="h6" component="h2">
+            <Typography className={classes.typography} gutterBottom>
               {quote === undefined
                 ? `${staticQuote.text}  -${staticQuote.author}`
                 : `${quote.text}  -${quote.author}`}
