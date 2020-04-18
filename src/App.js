@@ -2,11 +2,12 @@ import React from 'react';
 
 import TimerAndQuote from './components/Timer&Quote/TimerAndQuote'
 import ExpenseTracker from '../src/components/ExpenseTracker/ExpenseTracker'
-import { Todo } from './components/Todo/Todo'
+import RemindersPage from './components/Reminders/RemindersPage'
 
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -37,7 +38,7 @@ function App() {
 
           <Grid item xs={12} sm={6} style={{ paddingLeft: 0 }}>
             <Paper className={classes.paper} style={{ paddingLeft: 0, }} >
-              <Todo />
+              <RemindersPage />
             </Paper>
           </Grid>
 
