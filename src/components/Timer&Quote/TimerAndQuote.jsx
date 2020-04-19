@@ -46,7 +46,7 @@ export default function TimerAndQuote() {
     const milliseconds = +e.currentTarget.dataset.milliseconds;
     setTimeInMilliseconds(milliseconds);
   };
-  console.log(staticQuote)
+
   return (
     <div className="quote" style={backgroundImage}>
       <Timer handleTime={handleTime} />

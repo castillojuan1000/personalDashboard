@@ -20,6 +20,12 @@ const useStyles = makeStyles((theme) => ({
     height: '80vh',
     overflow: 'auto'
   },
+  removeGap: {
+
+    [theme.breakpoints.down('sm')]: {
+      paddingTop: 0,
+    },
+  }
 }));
 
 function App() {
@@ -30,14 +36,14 @@ function App() {
       <div className={classes.root} >
         <Grid container spacing={3} >
 
-          <Grid item xs={12} sm={6} style={{ paddingRight: 0 }}>
-            <Paper className={classes.paper} style={{ paddingRight: 0 }}>
+          <Grid item xs={12} sm={6} style={{ paddingRight: 0, paddingBottom: 0 }}>
+            <Paper className={classes.paper} >
               <ExpenseTracker />
             </Paper>
           </Grid>
 
           <Grid item xs={12} sm={6} style={{ paddingLeft: 0 }}>
-            <Paper className={classes.paper} style={{ paddingLeft: 0, }} >
+            <Paper className={classes.paper}  >
               <RemindersPage />
             </Paper>
           </Grid>

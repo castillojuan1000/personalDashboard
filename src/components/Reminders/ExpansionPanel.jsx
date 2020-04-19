@@ -5,12 +5,16 @@ import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import ReminderList from './ReminderList'
+
+import DailyReminderList from './DailyReminderList'
+import WeeklyReminderList from './WeeklyReminderList'
+import MonthlyReminderList from './MonthlyReminderList'
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "90%",
     marginTop: theme.spacing(1),
+    margin: ' 0 auto'
   },
   heading: {
     fontSize: theme.typography.pxToRem(25),
@@ -32,7 +36,7 @@ export default function SimpleExpansionPanel() {
           <Typography className={classes.heading}>Daily</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <ReminderList />
+          <DailyReminderList />
         </ExpansionPanelDetails>
       </ExpansionPanel>
 
@@ -46,7 +50,7 @@ export default function SimpleExpansionPanel() {
           <Typography className={classes.heading}>Weekly</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <ReminderList />
+          <WeeklyReminderList />
         </ExpansionPanelDetails>
       </ExpansionPanel>
 
@@ -60,7 +64,7 @@ export default function SimpleExpansionPanel() {
           <Typography className={classes.heading}>Monthly</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
-          <ReminderList />
+          <MonthlyReminderList />
         </ExpansionPanelDetails>
       </ExpansionPanel>
     </div>

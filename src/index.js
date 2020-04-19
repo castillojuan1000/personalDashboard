@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { TransactionsProvider } from '../src/context/TransactionsContext'
+import { RemindersProvider } from '../src/context/RemindersContext'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <TransactionsProvider>
+
+  <TransactionsProvider>
+    <RemindersProvider>
       <App />
-    </TransactionsProvider>
-  </React.StrictMode>,
+    </RemindersProvider>
+  </TransactionsProvider>,
+
   document.getElementById('root')
 );
 
