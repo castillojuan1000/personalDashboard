@@ -33,7 +33,7 @@ export default function SimpleExpansionPanel() {
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography className={classes.heading}>Daily</Typography>
+          <Typography className={classes.heading}>Today</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <DailyReminderList />
@@ -47,7 +47,7 @@ export default function SimpleExpansionPanel() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Weekly</Typography>
+          <Typography className={classes.heading}>This Week</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <WeeklyReminderList />
@@ -61,7 +61,7 @@ export default function SimpleExpansionPanel() {
           aria-controls="panel2a-content"
           id="panel2a-header"
         >
-          <Typography className={classes.heading}>Monthly</Typography>
+          <Typography className={classes.heading}>This Month</Typography>
         </ExpansionPanelSummary>
         <ExpansionPanelDetails>
           <MonthlyReminderList />
