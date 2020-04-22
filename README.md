@@ -1,68 +1,78 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal Dashboard
 
-## Available Scripts
+ ![Project Image](src/img/pkb1.png)
 
-In the project directory, you can run:
+ 
 
-### `npm start`
+ ---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+ ### Table of Contents
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- [Description](#description)
+- [How To Use](#how-to-use)
+- [Author Info](#author-info)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Description
 
-### `npm run build`
+The idea of a personal dashboard was born when I realize the need of an application for myself where I can keep track of my expenses and remind me of things I need to complete. This application is devided in three section. The top section, where it includes a random Quote to inspire me as soon as I open up the page. The left section is my expenses section where I can keep track of my income and expeneses. The right section is my reminder section where it reminds me of the things, chores, and projects I need to complete. Data is being stored in firebase's firestore and return in real time. 
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Technologies
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- React 
+- JavaScript 
+- Firebase
+- CSS 
+- Material-UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## How To Use
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Installation 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `git clone https://github.com/castillojuan1000/personalDashboard`
+- `npm install`
+- `npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### API Resources 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- GET /quotes
 
-## Learn More
+example: [https://type.fit/api/quotes](https://type.fit/api/quotes)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+response body: 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```javascrip
+[
+  {
+    "text": "Genius is one percent inspiration and ninety-nine percent perspiration.",
+    "author": "Thomas Edison"
+  },
+  {
+    "text": "You can observe a lot just by watching.",
+    "author": "Yogi Berra"
+  },
+  {
+    "text": "A house divided against itself cannot stand.",
+    "author": "Abraham Lincoln"
+  },
+  {
+    "text": "Difficulties increase the nearer we get to the goal.",
+    "author": "Johann Wolfgang von Goethe"
+  },
+  {
+    "text": "Fate is in your hands and no one elses",
+    "author": "Byron Pulsifer"
+  },
+]
+```
 
-### Code Splitting
+--- 
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+## Author Info
+ - LinkedIn [LinkedIn](https://www.linkedin.com/in/juan-m-castillo-355403186/)
+ - Website [JuanCastillo](https://juancastillo.dev/)
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+ [Back To The Top](#personal-dashboard)
