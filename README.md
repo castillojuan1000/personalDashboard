@@ -6,6 +6,10 @@
 
  ---
 
+ ## Demo
+
+ ![Demo](dashboard.gif)
+
  ### Table of Contents
 
 - [Description](#description)
