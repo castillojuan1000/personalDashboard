@@ -6,21 +6,19 @@
 
  ---
 
- ## Demo
-
- ![Demo](dashboard.gif)
 
  ### Table of Contents
 
 - [Description](#description)
 - [How To Use](#how-to-use)
+- [API Resources](#api-resources)
 - [Author Info](#author-info)
 
 ---
 
-## Description
+## Description 
 
-The idea of a personal dashboard was born when I realize the need of an application for myself where I can keep track of my expenses and remind me of things I need to complete. This application is devided in three section. The top section, where it includes a random Quote to inspire me as soon as I open up the page. The left section is my expenses section where I can keep track of my income and expeneses. The right section is my reminder section where it reminds me of the things, chores, and projects I need to complete. Data is being stored in firebase's firestore and return in real time. 
+Personal Dashboard was created with the need of an application for myself where I can keep track of my finances and to remind me fo things that I need to complete. It provides the function to calculate income and your expenses, and save reminders that need to be completed accordingly. 
 
 #### Technologies
 
@@ -30,15 +28,18 @@ The idea of a personal dashboard was born when I realize the need of an applicat
 - CSS 
 - Material-UI
 
+### Demo
+
+ ![Demo](dashboard.gif)
 ---
 
 ## How To Use
 
 #### Installation 
 
-- `git clone https://github.com/castillojuan1000/personalDashboard`
-- `npm install`
-- `npm start`
+- Clone this repo to your desktop `git clone https://github.com/castillojuan1000/personalDashboard`
+- Run `npm install` to install dependencies
+- Run `npm start` to start the application
 
 ### API Resources 
 
