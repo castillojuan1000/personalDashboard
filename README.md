@@ -18,7 +18,7 @@
 
 ## Description 
 
-Personal Dashboard was created with the need of an application for myself where I can keep track of my finances and to remind me fo things that I need to complete. It provides the function to calculate income and your expenses, and save reminders that need to be completed accordingly. 
+Personal Dashboard was created with the need of an application for myself where I can keep track of my finances and to remind me of things that I need to complete. It provides the function to calculate my income and expenses, and save reminders that need to be completed accordingly. 
 
 #### Technologies
 
